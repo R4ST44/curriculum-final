@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Final</title>
+    <link rel="stylesheet" href="css/curriculu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="name">
+        <div class="img"> 
+            <img src="c:\Users\papu\Pictures\imagen3.jpg" alt="Imagen de Curriculum">
+        </div>
+        <div class="content">
+            <p class="p-1">Rafael Palmer</p>
+            <p class="p-2">64 años</p>
+        </div>
+    </div>
+    
+    <div class="info">
+    <p class="tituloSeccion">Informacion Personal</p>
+    <p class="tituloinfo">Nombre y apellidos:</p>
+    <p class="infoInfo">Rafael Palmer</p><br>
+    <p class="tituloinfo">Teléfono:</p>
+    <p class="infoInfo">1135200818</p><br>
+    <p class="tituloinfo">Dirección:</p>
+    <p class="infoInfo">5443 Harrison Ct</p><br>
+    <p class="tituloinfo">Email:</p>
+    <p class="infoInfo">Rafael.Palmer@example.com</p><br>
+    <p class="tituloinfo">Fecha de nacimiento:</p>
+    <p class="infoInfo">9/12/1959</p><br>
+    <p class="tituloinfo">DNI:</p>
+    <p class="infoInfo">912201600</p><br>
+    </div>
+
+    <button id="mostrarBandera">Mostrar Bandera</button>
+
+<div id="bandera" style="display: none;">
+    <img src="c:\Users\papu\Pictures\bandera argentina.png" alt="Bandera de Argentina">
+</div>
+
+<script>
+    document.getElementById("mostrarBandera").addEventListener("click", function () {
+        var bandera = document.getElementById("bandera");
+        bandera.style.display = "block"; // Muestra la bandera
+
+        setTimeout(function () {
+            bandera.style.display = "none"; // Oculta la bandera después de 2 segundos
+        }, 2000);
+    });
+</script>
+
+
+    <div class="info">
+    <p class="tituloSeccion">Experiencia Laboral</p>
+    <p class="tituloinfo">Repositor:</p>
+    <p class="infoInfo">Trabaje 2 años de repositor en un almacen.</p><br>
+    <p class="tituloinfo">Uber:</p>
+    <p class="infoInfo">4 años de experiencia en Uber.</p><br>
+    </div>
+
+    <div class="info">
+    <p class="tituloSeccion">Lenguajes</p>
+    <p class="tituloinfo">Materno:</p>
+    <p class="infoInfo">Español.</p><br>
+    <p class="tituloinfo">Conocimientos:</p>
+    <p class="infoInfo">Ingles AVANZADO.</p><br>
+    </div>
+
+    <div class="info">
+    <p class="tituloSeccion">Aptitudes y Pasatiempos</p>
+    <p class="tituloinfo">Aptitudes:</p>
+    <p class="infoInfo">Se desarollarme en un ambiente laboral y suelo entender las cosas con rapidez.</p><br>
+    <p class="tituloinfo">Pasatiempos:</p>
+    <p class="infoInfo">Leer, Escuchar Música y Salir a correr.</p><br>
+</body>
+</html>
